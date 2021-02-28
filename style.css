@@ -1,8 +1,12 @@
-@media screen and (max-width: 666px) {
+body {
+  background-color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+@media screen and (min-width: 1920px) {
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
+    width: 250px;
     text-align: center;
     text-decoration: none;
   }
@@ -13,34 +17,39 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-left: 350px;
   }
   li {
       float: left;
       padding: 0;
   }
 .fa-youtube {
-    background: #fff;
-    color: #000; 
+    background: #000;
+    color: #fff; 
   }
   .fa-spotify {
-    background: #fff;
-    color: #000; 
+    background: #000;
+    color: #fff; 
   }
   .fa-instagram {
-    background: #fff;
-    color: #000; 
+    background: #000;
+    color: #fff; 
   }
   .fa-apple {
-    background: #fff;
-    color: #000; 
+    background: #000;
+    color: #fff; 
   }
 }
-@media screen and (min-width: 666px) {
+footer {
+  color: #fff;
+  text-align: center;
+  clear: both;
+}
+@media screen and (max-width: 666px) {
   .fa {
     padding: 20px;
     font-size: 40px;
-    width: 430px;
-    text-align: center;
+    width: 80px;
     text-decoration: none;
   }
   .fa:hover {
@@ -50,25 +59,27 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-left: 6.5rem;
   }
   li {
       float: left;
       padding: 0;
   }
 .fa-youtube {
-    background: #fff;
-    color: #000; 
+    color: #fff;
   }
   .fa-spotify {
-    background: #fff;
-    color: #000; 
+    color: #fff; 
   }
   .fa-instagram {
-    background: #fff;
-    color: #000; 
+    color: #fff; 
   }
   .fa-apple {
-    background: #fff;
-    color: #000; 
+    color: #fff; 
   }
+footer {
+  text-align: center;
+  color: #fff;
+  clear: both;
+}
 }
