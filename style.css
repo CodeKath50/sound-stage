@@ -61,6 +61,10 @@ ul {
   padding: 0;
   margin-left: 350px;
 }
+.header__top__logo
+  {
+    width: 80px;
+  }
 /*styling af ikoner for mobil*/
 @media screen and (max-width: 666px) {
   .fa {
@@ -75,17 +79,26 @@ ul {
     padding: 0;
     margin-left: 120px;
   }
+  .header__top__logo
+  {
+    width: 2rem;
+  }
   @media screen and (max-width: 375px) {
     .fa {
       padding: 20px;
       font-size: 40px;
-      width: 80px;
+      width: 40px;
       text-decoration: none;
     }
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      margin-left: 120px;
-    }  
+      margin-left: 2rem;
+    }
+      .header__top__logo
+  {
+    width: 3rem;
+  }
+  }  
 }
