@@ -61,6 +61,7 @@ ul {
   padding: 0;
   margin-left: 350px;
 }
+/*styling af ikoner for mobil*/
 @media screen and (max-width: 666px) {
   .fa {
     padding: 20px;
