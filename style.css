@@ -1,4 +1,8 @@
 
+body {
+  background-color: #000;
+  font-family: 'Raleway', sans-serif;
+}
 /*Logo Header*/
 .header {
   padding: 10px;
@@ -7,9 +11,28 @@
   color: white;
   font-size: 15px;
 }
-body {
-  background-color: #000;
-  font-family: 'Raleway', sans-serif;
+.fa:hover {
+  opacity: 0.7;
+}
+li {
+    float: left;
+    padding: 0;
+}
+.fa-youtube {
+  background: #000;
+  color: #fff; 
+}
+.fa-spotify {
+  background: #000;
+  color: #fff; 
+}
+.fa-instagram {
+  background: #000;
+  color: #fff; 
+}
+.fa-apple {
+  background: #000;
+  color: #fff; 
 }
 @media screen and (min-width: 1920px) {
 .fa {
@@ -19,35 +42,12 @@ body {
     text-align: center;
     text-decoration: none;
   }
-  .fa:hover {
-    opacity: 0.7;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 350px;
-  }
-  li {
-      float: left;
-      padding: 0;
-  }
-.fa-youtube {
-    background: #000;
-    color: #fff; 
-  }
-  .fa-spotify {
-    background: #000;
-    color: #fff; 
-  }
-  .fa-instagram {
-    background: #000;
-    color: #fff; 
-  }
-  .fa-apple {
-    background: #000;
-    color: #fff; 
-  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 350px;
 }
 footer {
   color: #fff;
@@ -61,30 +61,11 @@ footer {
     width: 80px;
     text-decoration: none;
   }
-  .fa:hover {
-    opacity: 0.7;
-  }
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-left: 6.5rem;
-  }
-  li {
-      float: left;
-      padding: 0;
-  }
-.fa-youtube {
-    color: #fff;
-  }
-  .fa-spotify {
-    color: #fff; 
-  }
-  .fa-instagram {
-    color: #fff; 
-  }
-  .fa-apple {
-    color: #fff; 
+    margin-left: 120px;
   }
 footer {
   text-align: center;
