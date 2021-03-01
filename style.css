@@ -75,4 +75,17 @@ ul {
     padding: 0;
     margin-left: 120px;
   }
+  @media screen and (max-width: 375px) {
+    .fa {
+      padding: 20px;
+      font-size: 40px;
+      width: 80px;
+      text-decoration: none;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-left: 120px;
+    }  
 }
