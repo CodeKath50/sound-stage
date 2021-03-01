@@ -1,4 +1,10 @@
 
+:root {
+  --background:#000;
+  --text: #fff;
+  --frame: rgb(236, 70, 70);
+}
+
 body {
   background-color: #000;
   font-family: 'Raleway', sans-serif;
