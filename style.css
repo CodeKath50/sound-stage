@@ -1,11 +1,10 @@
 
 :root {
   --background:#000;
-  --text: #fff;
+  --front: #ffffff;
   --frame: rgb(236, 70, 70);
   --font__name__color: #EDD4DB;
 }
-
 body {
   background-color: #000;
   font-family: 'Raleway', sans-serif;
@@ -44,7 +43,7 @@ li {
 }
 footer {
   text-align: center;
-  color: #fff;
+  color: var(--front);
   clear: both;
 }
 @media screen and (min-width: 1920px) {
@@ -67,11 +66,22 @@ ul {
     width: 80px;
   }
   .name__header {
-    font-size: 40px;
+    font-size: 80px;
     color: #fff;
     margin-top: 200px;
-    margin-left: 300px;
+    margin-left: 200px;
     color: var(--font__name__color);
+  }
+  .img__megaphone {
+    width: 950px;
+    margin-left: 955px;
+    margin-top: -250px;
+  }
+  .text__arrow {
+    display: none;
+  }
+  .arrow__down {
+    display: none;
   }
 /*styling af ikoner for mobil*/
 @media screen and (max-width: 666px) {
@@ -94,9 +104,26 @@ ul {
   .name__header {
     font-size: 40px;
     color: #fff;
-    margin-top: 7rem;
-    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-left: 10rem;
     color: var(--font__name__color);
+  }
+  .img__megaphone {
+    width: 25rem;
+    margin-left: 16.7rem;
+    margin-top: -2rem;
+  }
+  .text__arrow {
+    color: #fff;
+    display: block;
+    text-align: center;
+  }
+  .down__arrow {
+color: var(--front);
+font-size: 2rem;
+  text-align: center;
+  margin-top: -0.8rem;
+}
   }
   @media screen and (max-width: 375px) {
     .fa {
@@ -112,18 +139,35 @@ ul {
       margin-left: 3rem;
     }
       .header__top__logo
-  {
+      {
     width: 3rem;
   }
   .name__header {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #fff;
-    margin-top: 7rem;
-    margin-left: 2.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: var(--font__name__color);
+    text-align: center;
+    
+  }
+  .img__megaphone {
+    width: 10rem;
+    margin-left: 13.5rem;
+  }
+  .text__arrow {
+    color: #fff;
+    display: block;
+    text-align: center;
+  }
+  .down__arrow {
+color: var(--front);
+font-size: 2rem;
+  text-align: center;
+  margin-top: -0.8rem;
+}
   }
   footer {
     font-size: 0.7rem;
   }
   }  
-}
