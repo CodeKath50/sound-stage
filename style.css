@@ -34,6 +34,11 @@ li {
   background: #000;
   color: #fff; 
 }
+footer {
+  text-align: center;
+  color: #fff;
+  clear: both;
+}
 @media screen and (min-width: 1920px) {
 .fa {
     padding: 20px;
@@ -49,11 +54,6 @@ ul {
   padding: 0;
   margin-left: 350px;
 }
-footer {
-  color: #fff;
-  text-align: center;
-  clear: both;
-}
 @media screen and (max-width: 666px) {
   .fa {
     padding: 20px;
@@ -67,9 +67,4 @@ footer {
     padding: 0;
     margin-left: 120px;
   }
-footer {
-  text-align: center;
-  color: #fff;
-  clear: both;
-}
 }
