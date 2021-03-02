@@ -67,6 +67,9 @@ li {
   font-size: 1.5rem;
   margin-top: -1.5rem;
 }
+.music-video {
+	width: 50%;
+}
 footer {
   text-align: center;
   color: var(--front);
