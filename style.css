@@ -1,9 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 :root {
   --background:#000;
   --front: #ffffff;
   --frame: rgb(236, 70, 70);
   --font__name__color: #EDD4DB;
   --text__rotate: #920315;
+  --video__border: #BF6980;
 }
 body {
   background-color: var(--background);
@@ -65,31 +70,104 @@ li {
   color: var(--front);
   text-align: center;
   font-size: 1.5rem;
-  margin-top: -1.5rem;
+  margin-bottom: 1rem;
 }
 .music-video {
-	width: 50%;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	border: 5px solid var(--video__border);
 }
 footer {
   text-align: center;
   color: var(--front);
   font-size: 0.8rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  margin-top: auto; 
 }
+@media only screen and (min-width: 768px) {
+	.img__logo {
+	  width: 10%;
+	}
+	.name {
+	  font-size: 70px;
+	}
+	.fa {
+  font-size: 4rem;
+	}
+	.megafon {
+	width: 90%;
+	position: absolute; right: 0%;
+	margin-top: -2rem;
+	}
+	.text__arrow {
+	  font-size: 4rem;
+	  margin-top: 27rem;
+	}
+	.down__arrow {
+	  font-size: 4rem;
+	  margin-top: -4.5rem;
+	}
+	.music-video {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		border: 10px solid var(--video__border);
+	}
+	.sp-container h2 {
+	top: 10px;
+	}
+	footer {
+	font-size: 1rem;
+	margin-top: auto; 
+	}
+  }
+  @media only screen and (min-width: 1000px) {
+	.img__logo {
+	  width: 5%;
+	}
+	.name {
+	  font-size: 92px;
+	  margin-left: 160px;
+	  text-align: left;
+	}
+	.img__text__1 {
+	  top: 420px;
+	  right: 490px;
+	  font-size: 100px;
+	}
+	.img__text__2 {
+	  top: 350px;
+	  right: 350px;
+	  font-size: 100px;
+	}
+	.img__text__3 {
+	  top: 260px;
+	  right: 100px;
+	  font-size: 100px;
+	}
+	.img__text__4 {
+	  top: 430px;
+	  right: 100px;
+	  font-size: 100px;
+	}
+	.text__arrow {
+	  display: none;
+	}
+	.down__arrow {
+	  display: none;
+	}
+	footer {
+	font-size: 20px;
+	margin-top:auto; 
+	}
+  }  
 /*baggrundsbilldet*/
 .megafon {
 	width: 95%;
   position: absolute; right: 0%;
-  margin-top: -2rem;
 }
 /*kontaineren*/
 .sp-container {
-	position: fixed;
-	top: 100px;
-	right: 20px;
 	width: 100%;
 	height: 30%;
 	z-index: 0;
@@ -97,11 +175,8 @@ footer {
 }
 /*kontainer indholdet*/
 .sp-content {
-	position: absolute;
 	width: 75%;
 	height: 100%;
-	left: 130px;
-	top: 85px;
 	z-index: 1000;
 	transform: rotate(340deg);
 }
@@ -111,7 +186,8 @@ footer {
 	top: 50%;
 	line-height: 100px;
 	height: 90px;
-	top: 80px;
+	top: 60px;
+	left: 90px;
 	margin-top: -10px;
 	font-size: 20px;
 	width: 100%;
@@ -358,101 +434,4 @@ footer {
 		opacity: 1;
 		transform: scale(1) rotate(0deg);
 	}
-}
-@media only screen and (min-width: 768px) {
-  .img__logo {
-    width: 10%;
-  }
-  .name {
-    font-size: 70px;
-  }
-  .fa {
-font-size: 4rem;
-  }
-  .img__megaphone {
-    margin-top: -4rem;
-  }
-  .img__text__1 {
-    top: 31rem;
-    right: 27rem;
-    font-size: 5rem;
-  }
-  .img__text__2 {
-    top: 27.5rem;
-    right: 19.5rem;
-    font-size: 5rem;
-  }
-  .img__text__3 {
-    top: 23rem;
-    right: 6rem;
-    font-size: 5rem;
-  }
-  .img__text__4 {
-    top: 32rem;
-    right: 8rem;
-    font-size: 5rem;
-  }
-  .text__arrow {
-    font-size: 4rem;
-    margin-top: 27rem;
-  }
-  .down__arrow {
-    font-size: 4rem;
-    margin-top: -4.5rem;
-  }
-  footer {
-  font-size: 1rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .img__logo {
-    width: 5%;
-  }
-  .name {
-    font-size: 92px;
-    margin-left: 160px;
-    text-align: left;
-  }
-  .img__megaphone {
-    width: 45%;
-    margin-top: -250px;
-  }
-  .img__text__1 {
-    top: 420px;
-    right: 490px;
-    font-size: 100px;
-  }
-  .img__text__2 {
-    top: 350px;
-    right: 350px;
-    font-size: 100px;
-  }
-  .img__text__3 {
-    top: 260px;
-    right: 100px;
-    font-size: 100px;
-  }
-  .img__text__4 {
-    top: 430px;
-    right: 100px;
-    font-size: 100px;
-  }
-  .text__arrow {
-    display: none;
-  }
-  .down__arrow {
-    display: none;
-  }
-  footer {
-  font-size: 20px;
-  margin-top: 450px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  }
 }
