@@ -9,18 +9,6 @@ body {
   background-color: var(--background);
   font-family: 'Raleway', sans-serif;
 }
-.text__rotate__1 {
-  color: var(--text__rotate);
-}
-.text__rotate__2 {
-  color: var(--text__rotate);
-}
-.text__rotate__3 {
-  color: var(--text__rotate);
-}
-.text__rotate__4 {
-  color: var(--text__rotate);
-}
 .fa {
   font-size: 2rem;
   width: 5rem;
@@ -32,14 +20,14 @@ ul {
   padding: 0;
   
 }
-/*Logo Header*/
+/*Logo header*/
 .header__logo {
   text-align: center;
 }
 .img__logo {
   width: 20%;
 }
-/*social medier*/
+/*Social media*/
 .fa:hover {
   opacity: 0.7;
 }
@@ -65,7 +53,60 @@ li {
 .name {
   color: var(--font__name__color);
   text-align: center;
+  font-size: 35px;
 }
+.img__megaphone {
+  width: 95%;
+  position: absolute; right: 0%;
+  margin-top: -2rem;
+}
+.img__text__1 {
+  color: var(--text__rotate);
+  position: absolute;
+  top: 20rem;
+  right: 14rem;
+  font-size: 2rem;
+  transform: rotate(335deg);
+}
+.img__text__2 {
+  color: var(--text__rotate);
+  position: absolute;
+  top: 18.5rem;
+  right: 11rem;
+  font-size: 2rem;
+  transform: rotate(335deg);
+}
+.img__text__3 {
+  color: var(--text__rotate);
+  position: absolute;
+  top: 16.5rem;
+  right: 6rem;
+  font-size: 2rem;
+  transform: rotate(335deg);
+}
+.img__text__4 {
+  color: var(--text__rotate);
+  position: absolute;
+  top: 20.5rem;
+  right: 6rem;
+  font-size: 2rem;
+  transform: rotate(335deg);
+}
+/*
+.text__rotate__1 {
+  color: var(--text__rotate);
+  margin-left: 12rem;
+}
+.text__rotate__2 {
+  color: var(--text__rotate);
+}
+.text__rotate__3 {
+  color: var(--text__rotate);
+}
+.text__rotate__4 {
+  color: var(--text__rotate);
+}
+*/
 footer {
   text-align: center;
   color: var(--front);
