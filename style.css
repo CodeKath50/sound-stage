@@ -92,22 +92,20 @@ li {
   font-size: 2rem;
   transform: rotate(335deg);
 }
-/*
-.text__rotate__1 {
-  color: var(--text__rotate);
-  margin-left: 12rem;
+.text__arrow {
+  color: var(--front);
+  font-size: 1.5rem;
+  margin-top: 13rem;
+  text-align: center;
 }
-.text__rotate__2 {
-  color: var(--text__rotate);
+.down__arrow {
+  color: var(--front);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: -1.5rem;
 }
-.text__rotate__3 {
-  color: var(--text__rotate);
-}
-.text__rotate__4 {
-  color: var(--text__rotate);
-}
-*/
 footer {
   text-align: center;
   color: var(--front);
+  font-size: 0.8rem;
 }
