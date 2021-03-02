@@ -89,7 +89,6 @@ ul {
   }
   .name__header {
     font-size: 80px;
-    color: #fff;
     margin-top: 200px;
     margin-left: 200px;
     color: var(--font__name__color);
@@ -161,13 +160,9 @@ ul {
     padding: 0;
     margin-left: 120px;
   }
-  .header__top__logo
-  {
-    width: 2rem;
-  }
-  .name__header {
+    
+  .name {
     font-size: 40px;
-    color: #fff;
     margin-top: 2rem;
     margin-left: 10rem;
     color: var(--font__name__color);
@@ -202,13 +197,9 @@ font-size: 2rem;
       padding: 0;
       margin-left: 3rem;
     }
-      .header__top__logo
-      {
-    width: 3rem;
-  }
-  .name__header {
+    
+  .name {
     font-size: 1.5rem;
-    color: #fff;
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: var(--font__name__color);
