@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 :root {
   --background:#000;
   --front: #ffffff;
@@ -9,7 +6,7 @@
   --text__rotate: #920315;
 }
 body {
-  background-color: #000;
+  background-color: var(--background);
   font-family: 'Raleway', sans-serif;
 }
 .text__rotate__1 {
@@ -24,21 +21,34 @@ body {
 .text__rotate__4 {
   color: var(--text__rotate);
 }
+.fa {
+  font-size: 2rem;
+  width: 5rem;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
 /*Logo Header*/
-.header {
-  padding: 10px;
+.header__logo {
   text-align: center;
-  background: #000000;
-  color: white;
-  font-size: 15px;
+}
+.img__logo {
+  width: 20%;
 }
 /*social medier*/
 .fa:hover {
   opacity: 0.7;
 }
 li {
-    float: left;
+    display: inline;
     padding: 0;
+}
+.social__icons {
+  text-align: center;
 }
 .fa-youtube {
   color: #fff; 
@@ -52,176 +62,11 @@ li {
 .fa-apple {
   color: #fff; 
 }
-.text__rotate__1 {
-  color: var(--front)
-}
-.text__rotate__2 {
-  color: var(--front);
-}
-.text__rotate__3 {
-  color: var(--front);
-}
-.text__rotate__4 {
-  color: var(--front);
+.name {
+  color: var(--font__name__color);
+  text-align: center;
 }
 footer {
   text-align: center;
   color: var(--front);
 }
-@media screen and (min-width: 800px) {
-.fa {
-    padding: 20px;
-    font-size: 80px;
-    width: 300px;
-    text-align: center;
-    text-decoration: none;
-  }
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-left: 280px;
-}
-.header__top__logo
-  {
-    width: 5%;
-  }
-  .name__header {
-    font-size: 80px;
-    margin-top: 200px;
-    margin-left: 200px;
-    color: var(--font__name__color);
-  }
-  .img__megaphone {
-    margin-left: 575px;
-    width: 70%;
-    margin-top: -250px;
-    height: auto;
-  }
-  .text__arrow {
-    display: none;
-  }
-  .arrow__down {
-    display: none;
-  }
-  @media screen and (max-width: 1700px) {
-    .fa {
-      padding: 20px;
-      font-size: 40px;
-      width: 80px;
-      text-decoration: none;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      margin-left: 120px;
-    }
-    .header__top__logo
-    {
-      width: 2rem;
-    }
-    .name__header {
-      font-size: 40px;
-      color: #fff;
-      margin-top: 2rem;
-      margin-left: 10rem;
-      color: var(--font__name__color);
-    }
-    .img__megaphone {
-      width: 25rem;
-      margin-left: 16.7rem;
-      margin-top: -2rem;
-    }
-    .text__arrow {
-      color: #fff;
-      display: block;
-      text-align: center;
-    }
-    .down__arrow {
-  color: var(--front);
-  font-size: 2rem;
-    text-align: center;
-    margin-top: -0.8rem;
-  }
-    }
-/*styling af ikoner for mobil*/
-@media screen and (max-width: 666px) {
-  .fa {
-    padding: 20px;
-    font-size: 40px;
-    width: 80px;
-    text-decoration: none;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 120px;
-  }
-    
-  .name {
-    font-size: 40px;
-    margin-top: 2rem;
-    margin-left: 10rem;
-    color: var(--font__name__color);
-  }
-  .img__megaphone {
-    width: 25rem;
-    margin-left: 16.7rem;
-    margin-top: -2rem;
-  }
-  .text__arrow {
-    color: #fff;
-    display: block;
-    text-align: center;
-  }
-  .down__arrow {
-color: var(--front);
-font-size: 2rem;
-  text-align: center;
-  margin-top: -0.8rem;
-}
-  }
-  @media screen and (max-width: 375px) {
-    .fa {
-      padding: 1.5rem;
-      font-size: 2.2rem;
-      width: 1rem;
-      text-decoration: none;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      margin-left: 3rem;
-    }
-    
-  .name {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: var(--font__name__color);
-    text-align: center;
-    
-  }
-  .img__megaphone {
-    width: 10rem;
-    margin-left: 13.5rem;
-  }
-  .text__arrow {
-    color: #fff;
-    display: block;
-    text-align: center;
-  }
-  .down__arrow {
-color: var(--front);
-font-size: 2rem;
-  text-align: center;
-  margin-top: -0.8rem;
-}
-  }
-  footer {
-    font-size: 0.7rem;
-  }
