@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 :root {
   --background:#000;
   --front: #ffffff;
@@ -26,19 +28,15 @@ li {
     padding: 0;
 }
 .fa-youtube {
-  background: #000;
   color: #fff; 
 }
 .fa-spotify {
-  background: #000;
   color: #fff; 
 }
 .fa-instagram {
-  background: #000;
   color: #fff; 
 }
 .fa-apple {
-  background: #000;
   color: #fff; 
 }
 footer {
@@ -46,7 +44,7 @@ footer {
   color: var(--front);
   clear: both;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 800px) {
 .fa {
     padding: 20px;
     font-size: 80px;
@@ -61,17 +59,21 @@ ul {
   padding: 0;
   margin-left: 280px;
 }
-
-  .name {
+.header__top__logo
+  {
+    width: 5%;
+  }
+  .name__header {
     font-size: 80px;
     margin-top: 200px;
     margin-left: 200px;
     color: var(--font__name__color);
   }
   .img__megaphone {
-    width: 950px;
-    margin-left: 955px;
+    margin-left: 575px;
+    width: 70%;
     margin-top: -250px;
+    height: auto;
   }
   .text__arrow {
     display: none;
@@ -79,6 +81,47 @@ ul {
   .arrow__down {
     display: none;
   }
+  @media screen and (max-width: 1700px) {
+    .fa {
+      padding: 20px;
+      font-size: 40px;
+      width: 80px;
+      text-decoration: none;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-left: 120px;
+    }
+    .header__top__logo
+    {
+      width: 2rem;
+    }
+    .name__header {
+      font-size: 40px;
+      color: #fff;
+      margin-top: 2rem;
+      margin-left: 10rem;
+      color: var(--font__name__color);
+    }
+    .img__megaphone {
+      width: 25rem;
+      margin-left: 16.7rem;
+      margin-top: -2rem;
+    }
+    .text__arrow {
+      color: #fff;
+      display: block;
+      text-align: center;
+    }
+    .down__arrow {
+  color: var(--front);
+  font-size: 2rem;
+    text-align: center;
+    margin-top: -0.8rem;
+  }
+    }
 /*styling af ikoner for mobil*/
 @media screen and (max-width: 666px) {
   .fa {
