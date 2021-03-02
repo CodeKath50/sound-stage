@@ -6,10 +6,23 @@
   --front: #ffffff;
   --frame: rgb(236, 70, 70);
   --font__name__color: #EDD4DB;
+  --text__rotate: #920315;
 }
 body {
   background-color: #000;
   font-family: 'Raleway', sans-serif;
+}
+.text__rotate__1 {
+  color: var(--text__rotate);
+}
+.text__rotate__2 {
+  color: var(--text__rotate);
+}
+.text__rotate__3 {
+  color: var(--text__rotate);
+}
+.text__rotate__4 {
+  color: var(--text__rotate);
 }
 /*Logo Header*/
 .header {
@@ -39,10 +52,21 @@ li {
 .fa-apple {
   color: #fff; 
 }
+.text__rotate__1 {
+  color: var(--front)
+}
+.text__rotate__2 {
+  color: var(--front);
+}
+.text__rotate__3 {
+  color: var(--front);
+}
+.text__rotate__4 {
+  color: var(--front);
+}
 footer {
   text-align: center;
   color: var(--front);
-  clear: both;
 }
 @media screen and (min-width: 800px) {
 .fa {
