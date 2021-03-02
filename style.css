@@ -11,7 +11,7 @@ body {
 }
 .fa {
   font-size: 2rem;
-  width: 5rem;
+  width: 20%;
   text-decoration: none;
 }
 ul {
@@ -53,7 +53,7 @@ li {
 .name {
   color: var(--font__name__color);
   text-align: center;
-  font-size: 35px;
+  font-size: 2.3rem;
 }
 .img__megaphone {
   width: 95%;
@@ -108,4 +108,57 @@ footer {
   text-align: center;
   color: var(--front);
   font-size: 0.8rem;
+}
+@media only screen and (min-width: 768px) {
+  .img__logo {
+    width: 10%;
+  }
+  .name {
+    font-size: 70px;
+  }
+  .fa {
+font-size: 4rem;
+  }
+  .img__megaphone {
+    margin-top: -4rem;
+  }
+  .img__text__1 {
+    color: var(--text__rotate);
+    position: absolute;
+    top: 31rem;
+    right: 27rem;
+    font-size: 5rem;
+  }
+  .img__text__2 {
+    color: var(--text__rotate);
+    position: absolute;
+    top: 27.5rem;
+    right: 19.5rem;
+    font-size: 5rem;
+  }
+  .img__text__3 {
+    color: var(--text__rotate);
+    position: absolute;
+    top: 23rem;
+    right: 6rem;
+    font-size: 5rem;
+  }
+  .img__text__4 {
+    color: var(--text__rotate);
+    position: absolute;
+    top: 32rem;
+    right: 8rem;
+    font-size: 5rem;
+  }
+  .text__arrow {
+    font-size: 4rem;
+    margin-top: 27rem;
+  }
+  .down__arrow {
+    font-size: 4rem;
+    margin-top: -4.5rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
 }
