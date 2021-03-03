@@ -20,17 +20,17 @@ body {
   width: 20%;
   text-decoration: none;
 }
-ul {
+.social {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  
-}
-/*Logo header*/
-.header__logo {
   text-align: center;
 }
-.img__logo {
+/*Logo header*/
+.header-logo {
+  text-align: center;
+}
+.img-logo {
   width: 20%;
 }
 /*Social media*/
@@ -41,19 +41,7 @@ li {
     display: inline;
     padding: 0;
 }
-.social__icons {
-  text-align: center;
-}
-.fa-youtube {
-  color: #fff; 
-}
-.fa-spotify {
-  color: #fff; 
-}
-.fa-instagram {
-  color: #fff; 
-}
-.fa-apple {
+.fa-youtube, .fa-spotify, .fa-instagram, .fa-apple {
   color: #fff; 
 }
 .name {
@@ -67,11 +55,8 @@ li {
   margin-top: 13rem;
   text-align: center;
 }
-.down__arrow {
-  color: var(--front);
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.video {
+	margin-top: 200px;
 }
 .music-video {
 	width: 90%;
@@ -80,32 +65,30 @@ li {
 	border: 5px solid var(--video__border);
 }
 /*baggrundsbilldet*/
-.megafon {
+.image-megafon {
 	width: 95%;
   position: absolute; right: 0%;
 }
-/*kontaineren*/
-.sp-container {
+/*containeren*/
+.animation-sp-container {
 	width: 100%;
 	height: 30%;
 	z-index: 0;
 	background: transparent;
 }
-/*kontainer indholdet*/
+/*container indholdet*/
 .sp-content {
-	width: 75%;
+	width: 65%;
 	height: 100%;
 	z-index: 1000;
 	transform: rotate(340deg);
 }
-/*kontainer overskriften*/
-.sp-container h2 {
+/*container overskriften*/
+.animation-sp-container h2 {
 	position: absolute;
 	top: 50%;
 	line-height: 100px;
 	height: 90px;
-	margin-top: 50px;
-	margin-left: 90px;
 	font-size: 20px;
 	width: 100%;
 	color: transparent;
@@ -115,7 +98,7 @@ li {
 	animation: blurFadeInOut 3s ease-in backwards;
 }
 /*kontainer ordrammer*/
-.sp-container h2.frame-1 {
+.animation-sp-container h2.frame-1 {
 	font-family: 'Rock Salt', cursive;
 	font-size: 60px;	
 	-webkit-animation-delay: 0s;
@@ -123,7 +106,7 @@ li {
 	-ms-animation-delay: 0s;
 	animation-delay: 0s;
 }
-.sp-container h2.frame-2 {
+.animation-sp-container h2.frame-2 {
 	font-family: 'Rock Salt', cursive;
 	font-size: 50px;
 	-webkit-animation-delay: 3s;
@@ -132,7 +115,7 @@ li {
 	animation-delay: 3s;
 	
 }
-.sp-container h2.frame-3 {
+.animation-sp-container h2.frame-3 {
 	font-family: 'Rock Salt', cursive;
 	font-size: 50px;
 	-webkit-animation-delay: 6s;
@@ -140,7 +123,7 @@ li {
 	-ms-animation-delay: 6s;
 	animation-delay: 6s;
 }
-.sp-container h2.frame-4 {
+.animation-sp-container h2.frame-4 {
 	font-family: 'Rock Salt', cursive;
 	font-size: 50px;
 	-webkit-animation-delay: 9s;
@@ -148,14 +131,14 @@ li {
 	-ms-animation-delay: 9s;
 	animation-delay: 9s;
 }
-.sp-container h2.frame-5 {
+.animation-sp-container h2.frame-5 {
 	-webkit-animation: none;
 	-moz-animation: none;
 	-ms-animation: none;
 	animation: none;
 	text-shadow: 0px 0px 1px #920315;
 }
-.sp-container h2.frame-5 span {
+.animation-sp-container h2.frame-5 span {
 	font-family: 'Rock Salt', cursive;
 	font-size: 23px;
 	-webkit-animation: blurFadeIn 3s ease-in 12s backwards;
@@ -165,13 +148,13 @@ li {
 	color: var(--text__rotate);
 	text-shadow: 0px 0px 1px #920315;
 }
-.sp-container h2.frame-5 span:nth-child(2) {
+.animation-sp-container h2.frame-5 span:nth-child(2) {
 	-webkit-animation-delay: 13s;
 	-moz-animation-delay: 13s;
 	-ms-animation-delay: 13s;
 	animation-delay: 13s;
 }
-.sp-container h2.frame-5 span:nth-child(3) {
+.animation-sp-container h2.frame-5 span:nth-child(3) {
 	-webkit-animation-delay: 14s;
 	-moz-animation-delay: 14s;
 	-ms-animation-delay: 14s;
@@ -377,32 +360,20 @@ footer {
 	  font-size: 4rem;
 	  margin-top: 27rem;
 	}
-	.down__arrow {
-	  font-size: 4rem;
-	}
 	.music-video {
 		width: 90%;
 		display: block;
 		margin: 0 auto;
 		border: 10px solid var(--video__border);
 	}
-	.sp-container h2 {
+	.animation-sp-container h2 {
 	margin-top: 165px;
 	margin-left: 200px;
 	}
-	.sp-container h2.frame-1 {
+	.animation-sp-container h2.frame-1, .h2.frame-2, .h2.frame-3, h2.frame-4 {
 		font-size: 80px;	
 	}
-	.sp-container h2.frame-2 {
-		font-size: 80px;
-	}
-	.sp-container h2.frame-3 {
-		font-size: 80px;
-	}
-	.sp-container h2.frame-4 {
-		font-size: 80px;
-	}
-	.sp-container h2.frame-5 span {
+	.animation-sp-container h2.frame-5 span {
 		font-size: 45px;
 	}
 	footer {
@@ -428,32 +399,29 @@ footer {
 	.text__arrow {
 	  display: none;
 	}
-	.down__arrow {
-	  display: none;
-	}
 	.music-video {
 		width: 45%;
 		margin-left: 20px;
 		margin-top: 170px;
 		border: 10px solid var(--video__border);
 	}
-	.sp-container h2 {
+	.animation-sp-container h2 {
 	margin-top: 120px;
 	margin-left: 600px;
 	}
-	.sp-container h2.frame-1 {
+	.animation-sp-container h2.frame-1 {
 		font-size: 90px;	
 	}
-	.sp-container h2.frame-2 {
+	.animation-sp-container h2.frame-2 {
 		font-size: 90px;
 	}
-	.sp-container h2.frame-3 {
+	.animation-sp-container h2.frame-3 {
 		font-size: 90px;
 	}
-	.sp-container h2.frame-4 {
+	.animation-sp-container h2.frame-4 {
 		font-size: 90px;
 	}
-	.sp-container h2.frame-5 span {
+	.animation-sp-container h2.frame-5 span {
 		font-size: 30px;
 	}
 	footer {
