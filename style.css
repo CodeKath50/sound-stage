@@ -13,6 +13,7 @@
 body {
   background-color: var(--background);
   font-family: 'Raleway', sans-serif;
+  width: 100vw;
 }
 .fa {
   font-size: 2rem;
