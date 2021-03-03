@@ -415,13 +415,15 @@ footer {
 	  width: 5%;
 	}
 	.name {
-	  font-size: 92px;
-	  margin-left: 160px;
+	  font-size: 60px;
+	  margin-left: 90px;
+	  margin-top: 30px;
 	  text-align: left;
 	}
 	.megafon {
-		width: 45%;
+		width: 50%;
 		position: absolute; right: 0%;
+		margin-top: -80px;
 		}
 	.text__arrow {
 	  display: none;
@@ -430,29 +432,29 @@ footer {
 	  display: none;
 	}
 	.music-video {
-		width: 42%;
-		margin-left: 200px;
-		margin-top: 410px;
+		width: 45%;
+		margin-left: 20px;
+		margin-top: 170px;
 		border: 10px solid var(--video__border);
 	}
 	.sp-container h2 {
-	margin-top: 410px;
-	margin-left: 1200px;
+	margin-top: 120px;
+	margin-left: 600px;
 	}
 	.sp-container h2.frame-1 {
-		font-size: 130px;	
+		font-size: 90px;	
 	}
 	.sp-container h2.frame-2 {
-		font-size: 130px;
+		font-size: 90px;
 	}
 	.sp-container h2.frame-3 {
-		font-size: 130px;
+		font-size: 90px;
 	}
 	.sp-container h2.frame-4 {
-		font-size: 130px;
+		font-size: 90px;
 	}
 	.sp-container h2.frame-5 span {
-		font-size: 55px;
+		font-size: 30px;
 	}
 	footer {
 	font-size: 20px;
