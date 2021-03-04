@@ -112,6 +112,9 @@ footer {
 	top: 525px;
 	left: 250px;
 	}
+	.video {
+		margin-top: 400px;
+	}
 	.music-video {
 		width: 90%;
 		display: block;
@@ -124,7 +127,7 @@ footer {
 	}
   }
   @media only screen and (min-width: 1000px) {
-	.img__logo {
+	.img-logo {
 	  width: 5%;
 	}
 	.name {
@@ -140,7 +143,7 @@ footer {
 		}
 		.top-right {
 			font-size: 35px;
-			top: 820px;
+			top: 530px;
 			left: 1200px;
 		}
 	.music-video {
