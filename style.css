@@ -49,12 +49,6 @@ li {
   text-align: center;
   font-size: 2.3rem;
 }
-.text__arrow {
-  color: var(--front);
-  font-size: 1.5rem;
-  margin-top: 13rem;
-  text-align: center;
-}
 .video {
 	margin-top: 200px;
 }
@@ -65,277 +59,33 @@ li {
 	border: 5px solid var(--video__border);
 }
 /*baggrundsbilldet*/
-.image-megafon {
+.megafon {
 	width: 95%;
   position: absolute; right: 0%;
 }
-/*containeren*/
-.animation-sp-container {
-	width: 100%;
-	height: 30%;
-	z-index: 0;
-	background: transparent;
-}
-/*container indholdet*/
-.sp-content {
-	width: 65%;
-	height: 100%;
-	z-index: 1000;
-	transform: rotate(340deg);
-}
-/*container overskriften*/
-.animation-sp-container h2 {
-	position: absolute;
-	top: 50%;
-	line-height: 100px;
-	height: 90px;
+.container {
+	position: relative;
+	text-align: center;
+	color: var(--front);
+  }
+  .top-right {
 	font-size: 20px;
-	width: 100%;
-	color: transparent;
-	-webkit-animation: blurFadeInOut 3s ease-in backwards;
-	-moz-animation: blurFadeInOut 3s ease-in backwards;
-	-ms-animation: blurFadeInOut 3s ease-in backwards;
-	animation: blurFadeInOut 3s ease-in backwards;
-}
-/*kontainer ordrammer*/
-.animation-sp-container h2.frame-1 {
-	font-family: 'Rock Salt', cursive;
-	font-size: 60px;	
-	-webkit-animation-delay: 0s;
-	-moz-animation-delay: 0s;
-	-ms-animation-delay: 0s;
-	animation-delay: 0s;
-}
-.animation-sp-container h2.frame-2 {
-	font-family: 'Rock Salt', cursive;
-	font-size: 50px;
-	-webkit-animation-delay: 3s;
-	-moz-animation-delay: 3s;
-	-ms-animation-delay: 3s;
-	animation-delay: 3s;
-	
-}
-.animation-sp-container h2.frame-3 {
-	font-family: 'Rock Salt', cursive;
-	font-size: 50px;
-	-webkit-animation-delay: 6s;
-	-moz-animation-delay: 6s;
-	-ms-animation-delay: 6s;
-	animation-delay: 6s;
-}
-.animation-sp-container h2.frame-4 {
-	font-family: 'Rock Salt', cursive;
-	font-size: 50px;
-	-webkit-animation-delay: 9s;
-	-moz-animation-delay: 9s;
-	-ms-animation-delay: 9s;
-	animation-delay: 9s;
-}
-.animation-sp-container h2.frame-5 {
-	-webkit-animation: none;
-	-moz-animation: none;
-	-ms-animation: none;
-	animation: none;
-	text-shadow: 0px 0px 1px #920315;
-}
-.animation-sp-container h2.frame-5 span {
-	font-family: 'Rock Salt', cursive;
-	font-size: 23px;
-	-webkit-animation: blurFadeIn 3s ease-in 12s backwards;
-	-moz-animation: blurFadeIn 1s ease-in 12s backwards;
-	-ms-animation: blurFadeIn 3s ease-in 12s backwards;
-	animation: blurFadeIn 3s ease-in 12s backwards;
+	position: absolute;
+	top: 250px;
+	left: 100px;
 	color: var(--text__rotate);
-	text-shadow: 0px 0px 1px #920315;
-}
-.animation-sp-container h2.frame-5 span:nth-child(2) {
-	-webkit-animation-delay: 13s;
-	-moz-animation-delay: 13s;
-	-ms-animation-delay: 13s;
-	animation-delay: 13s;
-}
-.animation-sp-container h2.frame-5 span:nth-child(3) {
-	-webkit-animation-delay: 14s;
-	-moz-animation-delay: 14s;
-	-ms-animation-delay: 14s;
-	animation-delay: 14s;
-}
-/*webkits funktioner for animation*/
-
-@-webkit-keyframes blurFadeInOut {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #920315;
-		-webkit-transform: scale(1.3);
-	}
-	20%, 75% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #920315;
-		-webkit-transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		text-shadow: 0px 0px 50px #920315;
-		-webkit-transform: scale(0);
-	}
-}
-@-webkit-keyframes blurFadeIn {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #920315;
-		-webkit-transform: scale(1.3);
-	}
-	50% {
-		opacity: 0.5;
-		text-shadow: 0px 0px 10px #920315;
-		-webkit-transform: scale(1.1);
-	}
-	100% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #920315;
-		-webkit-transform: scale(1);
-	}
-}
-@-webkit-keyframes fadeInBack {
-	0% {
-		opacity: 0;
-		-webkit-transform: scale(0);
-	}
-	50% {
-		opacity: 0.4;
-		-webkit-transform: scale(2);
-	}
-	100% {
-		opacity: 0.2;
-		-webkit-transform: scale(5);
-	}
-}
-@-webkit-keyframes fadeInRotate {
-	0% {
-		opacity: 0;
-		-webkit-transform: scale(0) rotate(360deg);
-	}
-	100% {
-		opacity: 1;
-		-webkit-transform: scale(1) rotate(0deg);
-	}
-}
-/*moz funktoner for animation*/
-
-@-moz-keyframes blurFadeInOut {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #920315;
-		-moz-transform: scale(1.3);
-	}
-	20%, 75% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #920315;
-		-moz-transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		text-shadow: 0px 0px 50px #920315;
-		-moz-transform: scale(0);
-	}
-}
-@-moz-keyframes blurFadeIn {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #920315;
-		-moz-transform: scale(1.3);
-	}
-	100% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #920315;
-		-moz-transform: scale(1);
-	}
-}
-@-moz-keyframes fadeInBack {
-	0% {
-		opacity: 0;
-		-moz-transform: scale(0);
-	}
-	50% {
-		opacity: 0.4;
-		-moz-transform: scale(2);
-	}
-	100% {
-		opacity: 0.2;
-		-moz-transform: scale(5);
-	}
-}
-@-moz-keyframes fadeInRotate {
-	0% {
-		opacity: 0;
-		-moz-transform: scale(0) rotate(360deg);
-	}
-	100% {
-		opacity: 1;
-		-moz-transform: scale(1) rotate(0deg);
-	}
-}
-/*keyframes funktioner for animation*/
-
-@keyframes blurFadeInOut {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #920315;
-		transform: scale(1.3);
-	}
-	20%, 75% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #920315;
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		text-shadow: 0px 0px 50px #920315;
-		transform: scale(0);
-	}
-}
-@keyframes blurFadeIn {
-	0% {
-		opacity: 0;
-		text-shadow: 0px 0px 40px #920315;
-		transform: scale(1.3);
-	}
-	50% {
-		opacity: 0.5;
-		text-shadow: 0px 0px 10px #920315;
-		transform: scale(1.1);
-	}
-	100% {
-		opacity: 1;
-		text-shadow: 0px 0px 1px #920315;
-		transform: scale(1);
-	}
-}
-@keyframes fadeInBack {
-	0% {
-		opacity: 0;
-		transform: scale(0);
-	}
-	50% {
-		opacity: 0.4;
-		transform: scale(2);
-	}
-	100% {
-		opacity: 0.2;
-		transform: scale(5);
-	}
-}
-@keyframes fadeInRotate {
-	0% {
-		opacity: 0;
-		transform: scale(0) rotate(360deg);
-	}
-	100% {
-		opacity: 1;
-		transform: scale(1) rotate(0deg);
-	}
-}
-
+	font-family: 'Rock Salt', cursive;
+	width: 400px;
+	height: 100px;
+	animation-name: example;
+	animation-duration: 15s;
+	transform: rotate(335deg);
+  }
+  
+  @keyframes example {
+	from {color: var(--front);}
+	to {color: var(--text__rotate);}
+  }
 footer {
 	font-size: 10px;
 	text-align: center;
@@ -343,6 +93,7 @@ footer {
 	margin-top: 30px;
 }
 @media only screen and (min-width: 768px) {
+	
 	.img__logo {
 	  width: 10%;
 	}
@@ -356,25 +107,16 @@ footer {
 	width: 90%;
 	position: absolute; right: 0%;
 	}
-	.text__arrow {
-	  font-size: 4rem;
-	  margin-top: 27rem;
+	.top-right {
+	font-size: 30px;
+	top: 525px;
+	left: 250px;
 	}
 	.music-video {
 		width: 90%;
 		display: block;
 		margin: 0 auto;
 		border: 10px solid var(--video__border);
-	}
-	.animation-sp-container h2 {
-	margin-top: 165px;
-	margin-left: 200px;
-	}
-	.animation-sp-container h2.frame-1, .h2.frame-2, .h2.frame-3, h2.frame-4 {
-		font-size: 80px;	
-	}
-	.animation-sp-container h2.frame-5 span {
-		font-size: 45px;
 	}
 	footer {
 	font-size: 1rem;
@@ -386,7 +128,7 @@ footer {
 	  width: 5%;
 	}
 	.name {
-	  font-size: 60px;
+	  font-size: 90px;
 	  margin-left: 90px;
 	  margin-top: 30px;
 	  text-align: left;
@@ -396,33 +138,16 @@ footer {
 		position: absolute; right: 0%;
 		margin-top: -80px;
 		}
-	.text__arrow {
-	  display: none;
-	}
+		.top-right {
+			font-size: 35px;
+			top: 820px;
+			left: 1200px;
+		}
 	.music-video {
 		width: 45%;
 		margin-left: 20px;
 		margin-top: 170px;
 		border: 10px solid var(--video__border);
-	}
-	.animation-sp-container h2 {
-	margin-top: 120px;
-	margin-left: 600px;
-	}
-	.animation-sp-container h2.frame-1 {
-		font-size: 90px;	
-	}
-	.animation-sp-container h2.frame-2 {
-		font-size: 90px;
-	}
-	.animation-sp-container h2.frame-3 {
-		font-size: 90px;
-	}
-	.animation-sp-container h2.frame-4 {
-		font-size: 90px;
-	}
-	.animation-sp-container h2.frame-5 span {
-		font-size: 30px;
 	}
 	footer {
 	font-size: 20px;
